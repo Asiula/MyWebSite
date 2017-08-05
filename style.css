@@ -19,7 +19,6 @@ header
 {
     display: flex;
     width: 100%;
-    text-align:center;
 }
 #archlogo
 {
@@ -27,13 +26,16 @@ header
 }
 .left
 {
-    flex-direction: row:
+    justify-content: center;
+    display:flex;
     width: 30%;
+    align-items:center;
 }
 .center
 {
-    flex-direction: row;
-    align-self:center;
+    justify-content: center;
+    display:flex;
+    align-items: center;
     width: 70%;
 }
 nav
@@ -60,7 +62,7 @@ main
 {
     margin-top: 50px;
     display:flex;
-    width: 100;
+    width: 100%;
 }
 .linki
 {
@@ -71,4 +73,105 @@ main
 {
     flex-direction:row;
     width: 50%;
+    text-overflow:none;
+    justify-content: left;
+    margin: 5%;
+    font-size: 125%;
 }
+.linki2
+{
+    border: 5px #a6a28c solid;
+    border-radius:25px;
+    padding: 10px;
+    font-size:150%;
+    color:#fefbec;
+    text-decoration:none;
+    background-color: #594242;
+    display:block;
+    width: 50%;
+    margin-left: 20%;
+    text-align:center;
+    margin-top: 5%;
+}
+footer
+{
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    height: 100px;
+    background-color: #a6a28c;
+    color: #fefbec;
+}
+.half
+{
+    width: 50%;
+    display: row;
+    align-content: center;
+    margin-top: 45px;
+}
+#mail
+{
+    text-decoration:none;
+    color: #fefbec;
+    font-size:100%;
+    border: 5px #594242 solid;
+    border-radius:25px;
+    background-color: #20201d;
+}
+.half a
+{
+
+    margin-bottom:10%;
+    margin-left: 30px;
+    padding: 10px;
+}
+a#mail:visited
+{
+    color: black;
+}
+#joanna
+{
+    color: #20201d;
+    font-size:75%;
+    align-items:center;
+    text-align: right;
+    margin-right: 30px;
+}
+a.linki2:visited
+{
+    color: #20201d;
+}
+a.linki2:hover
+{
+    color: #c392ef;
+}
+a#Youtube:active
+{
+    color: #de1515;
+}
+a#Facebook:active
+{
+    color: #3b5998;
+}
+a#gazeta:active
+{
+    color: #ffffff;
+}
+@media screen and (max-width: 1280px)
+{
+    /*media queries*/
+    #archlogo
+    {
+        transform:scale(0.4);
+    }
+    .left
+    {
+        width: 50%;
+    }
+    .center
+    {
+        width: 50%;
+    }
+    /*media*/
+}
+
