@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base target="_blank">
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="ToDo List">
+         <meta name="author" content="Asia">
+         <meta name="keywords" content="homepage, todo">
+         <title>ToDo List</title>
+         <link href="todostyle.css" rel="stylesheet" type="text/css"/>
+                     <link href="img/cat.gif" rel="shortcut icon" type="image/gif"/>
+    </head>
+    <body>
+        <header>
+            <div class="left">
+            <a href="index.html">
+                <img id="archlogo" alt="Arch Logo" src="img/archlogo.svg"/>
+            </a>
+            </div>
+            <div class="center">
+                <h1>ToDo List</h1>
+                </div>
+        </header>
+        <nav>
+            <a class="nav" href="#">80`s</a>
+            <a class="nav" href="todo.html">ToDo</a>
+            <a class="nav" href="#">About</a>
+        </nav>
+        <main>
+            <section id="todoSection">
+                <ol id="todoList"></ol>
+        </section>
+        <aside id="todoAside">
+            <form id="todoForm">
+                <input type="text" id="todoInput" placeholder="&gt ToDo Item  &lt">
+                <button type="button" onclick="todoList()">Add ToDo item</button>
+            </form>
+        </aside>
+        </main>
+        <footer>
+            <div class="half">
+                <a id="mail" href="mailto:mcstando@gmail.com">Send me a feedback!</a>
+            </div>
+            <div class="half">
+            <p id="joanna">Joanna Web Design Copright &copy; 2017</p>
+            </div>
+            <script src="todo.js"></script>
+        </footer>
+    </body>
+</html>

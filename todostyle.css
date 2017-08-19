@@ -1,0 +1,276 @@
+@font-face {
+    font-family: Roboto Mono;
+    src: url(RobotoMono-Regular.ttf);
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+html
+{
+    height:100%;
+}
+body
+{
+    width: 100% ;
+    font-family: Roboto Mono;
+    background-color: #20201d;
+    color: #a6a28c;
+}
+header
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+#archlogo
+{
+    transform:scale(0.5);
+}
+.left
+{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 30%;
+}
+.center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+nav
+{
+    background-color: #a6a28c;
+    width: 100%;
+    height: 100px;
+    color: #fefbec;
+    display: inline-flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+}
+.nav
+{
+    margin-right: 5%;
+    font-size: 200%;
+    text-decoration:none;
+    color: #fefbec;
+}
+a.nav:visited
+{
+    color: #20201d;
+}
+a.nav:hover
+{
+    color: #c392ef;
+}
+a.nav:active
+{
+    color: #CFB017;
+}
+main
+{
+    margin-top: 50px;
+    display:flex;
+    width: 100%;
+    flex-direction:row-reverse;
+    min-height: 30vh;
+}
+section
+{
+    display: flex;
+    width:50%;
+    justify-content: center;
+    align-items: center;
+}
+aside
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+aside form input
+{
+    width: 100%;
+    border: solid 5px #594242;
+    background-color: #20201d;
+    border-radius: 15px;
+    height: 50px;
+    font-size:3vh;
+    color: #fefbec;
+    text-align:center;
+    transition: width 0.4s ease-in-out;
+}
+aside form input:focus
+{
+    width: 200%;
+}
+aside form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside form button
+{
+    margin-top: 20px;
+    background-color: #594242;
+    border-radius: 10px;
+    color: #fefbec;
+    height: 3vh;
+    width: 75%;
+}
+aside form button:active
+{
+    border:3px solid #594242;
+    border-radius: 15px;
+    background-color: #20201d;
+}
+section ol
+{
+    margin-bottom: 10px;
+    font-size:3vh;
+}
+footer
+{
+    display: inline-flex;
+    flex-direction:row;
+    margin-top: 5%;
+    width: 100%;
+    height: 100px;
+    background-color: #a6a28c;
+    color: #fefbec;
+    align-items: center;
+}
+.half
+{
+    width: 50%;
+}
+#mail
+{
+    text-decoration:none;
+    color: #fefbec;
+    font-size:100%;
+    border: 5px #594242 solid;
+    border-radius:25px;
+    background-color: #20201d;
+}
+.half a
+{
+
+    margin-bottom:10%;
+    margin-left: 30px;
+    padding: 10px;
+}
+a#mail:visited
+{
+    color: black;
+}
+#joanna
+{
+    color: #20201d;
+    font-size:75%;
+    text-align: right;
+    margin-right: 30px;
+}
+@media screen and (max-width: 1280px)
+{
+    /*media queries*/
+    #archlogo
+    {
+        transform:scale(0.4);
+    }
+    .left
+    {
+        width: 50%;
+    }
+    .center
+    {
+        width: 50%;
+    }
+    aside form input:focus
+    {
+        width: 130%;
+    }
+    /*media*/
+}
+@media screen and (max-width: 640px)
+{
+    /*------media---------*/
+    header
+    {
+        height: 200px;
+        flex-direction: column;
+    }
+    .left
+    {
+        height: 50%;
+        width: 100%;
+    }
+    .center
+    {
+        height: 50%;
+        align-items:center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    nav
+    {
+        justify-content:center;
+    }
+    .nav
+    {
+        font-size:150%;
+    }
+    main
+    {
+        margin-top: 10px;
+        flex-direction:column-reverse;
+    }
+    section
+    {
+        margin-top: 10px;
+        width: 100%;
+    }
+    aside
+    {
+        width: 100%;
+        align-items: center;
+    }
+    aside form input:focus
+    {
+        width: 130%;
+    }
+    footer
+    {
+        flex-direction:column;
+        height: 150px;
+        justify-content:center;
+        display: flex;
+        align-items: center;
+    }
+    .half
+    {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width: 100%;
+        height: 50%;
+    }
+    #joanna
+    {
+        margin-right: 0;
+    }
+    .half a
+    {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    /*-----media----------*/
+}
