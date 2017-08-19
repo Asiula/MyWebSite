@@ -110,6 +110,15 @@ aside form input:focus
 {
     width: 200%;
 }
+.delinp
+{
+    width: 75%;
+    margin-top: 20px;
+}
+.delinp:focus
+{
+    width: 75%;
+}
 aside form
 {
     display: flex;
