@@ -1,10 +1,11 @@
 var array = []
+var result = ''
 function todoList()
 {
     var item = document.getElementById('todoInput').value
     var text = document.createTextNode(item)
     var newItem = document.createElement('li')
-    array.push(item)
+    array.push("* " + item)
     newItem.appendChild(text)
     document.getElementById('todoList').appendChild(newItem)
     document.getElementById('delInput').setAttribute("max",array.length)
@@ -24,4 +25,11 @@ function delList()
         document.getElementById('delInput').value = ''
     }
     else {alert("Input is not a number")}
+}
+function arrayToTxt()
+{
+    for(var i=0; i < array.length; i++)
+    {
+        result = result + array[i]
+    }
 }
