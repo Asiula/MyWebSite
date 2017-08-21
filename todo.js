@@ -1,5 +1,5 @@
 var array = []
-var result = ''
+var list = ''
 function todoList()
 {
     var item = document.getElementById('todoInput').value
@@ -28,8 +28,7 @@ function delList()
 }
 function arrayToTxt()
 {
-    for(var i=0; i < array.length; i++)
-    {
-        result = result + array[i]
-    }
+    list = array.toString()
+    list = list.replace(/,/g,'\n')
+return list
 }
