@@ -1,5 +1,6 @@
 var array = []
 var list = ''
+var filename = 'ToDoList.org'
 function todoList()
 {
     var item = document.getElementById('todoInput').value
@@ -26,9 +27,21 @@ function delList()
     }
     else {alert("Input is not a number")}
 }
-function arrayToTxt()
+function arrayToTxt(array)
 {
-    list = array.toString()
-    list = list.replace(/,/g,'\n')
+    list = array.toString();
+    list = list.replace(/,/g,'\n');
 return list
+}
+function download(filename, list) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(list));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
 }
