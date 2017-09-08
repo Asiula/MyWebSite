@@ -4,11 +4,11 @@
         <base target="_blank">
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <meta name="description" content="ToDo List">
+         <meta name="description" content="About Page">
          <meta name="author" content="Asia">
-         <meta name="keywords" content="homepage, todo">
-         <title>ToDo List</title>
-         <link href="todostyle.css" rel="stylesheet" type="text/css"/>
+         <meta name="keywords" content="homepage, aboout">
+         <title>About Me</title>
+         <link href="aboutstyle.css" rel="stylesheet" type="text/css"/>
                      <link href="img/cat.gif" rel="shortcut icon" type="image/gif"/>
     </head>
     <body>
@@ -19,7 +19,7 @@
             </a>
             </div>
             <div class="center">
-                <h1>ToDo List</h1>
+                <h1>About</h1>
                 </div>
         </header>
         <nav>
@@ -28,17 +28,15 @@
             <a class="nav" href="about.html">About</a>
         </nav>
         <main>
-            <section id="todoSection">
-                <ol id="todoList"></ol>
+            <section>
+                <img alt="Moja mordka" src="img/moi.jpg"/>
         </section>
-        <aside id="todoAside">
-            <form id="todoForm">
-                <input type="text" autofocus="false" id="todoInput" placeholder="&gt ToDo Item  &lt">
-                <button type="button" onclick="todoList()">Add ToDo item</button>
-                 <input class="delinp" type="number" id="delInput" placeholder="&gt Item Number  &lt" min="1">
-                 <button type="button" onclick="delList()">Del ToDo item</button>
-                  <button type="button" onclick="arrayToTxt(array), download(filename, list)">Download</button>
-            </form>
+        <aside>
+            <p>
+                Młoda, ambitna, lubiąca nowe technologie.
+                Chętnie podejmuję nowe wyzwania.
+                Fanka Linuxa, która musi wszystko sama skonfigurować.
+            </p>
         </aside>
         </main>
         <footer>
@@ -48,8 +46,7 @@
             <div class="half">
             <p id="joanna">Joanna Web Design Copright &copy; 2017</p>
             </div>
-            <script src="todo.js"></script>
-             <script src="picswap.js"></script>
+            <script src="picswap.js"></script>
         </footer>
     </body>
 </html>

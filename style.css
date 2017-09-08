@@ -31,6 +31,8 @@ header
     align-items:center;
     justify-content: center;
     width: 30%;
+    flex-direction: column;
+    height: 200px;
 }
 .center
 {
@@ -195,6 +197,14 @@ a#gazeta:active
     .center
     {
         width: 50%;
+    }
+    .search
+    {
+        margin-left: 0px;
+    }
+    element
+    {
+        width: 100%;
     }
     /*media*/
 }
