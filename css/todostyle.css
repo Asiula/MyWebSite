@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto Mono;
-    src: url(RobotoMono-Regular.ttf);
+    src: url(fonts/RobotoMono-Regular.ttf);
 }
 *
 {
@@ -90,23 +90,63 @@ section
     justify-content: center;
     align-items: center;
 }
-section img
-{
-    border-radius: 50%;
-    width: 70%;
-}
 aside
 {
     width: 50%;
     display: flex;
     justify-content: center;
 }
-aside p
+aside form input
 {
-    width: 50%;
-    font-size: 200%;
-    text-align: left;
-    margin-top: 30%;
+    width: 100%;
+    border: solid 5px #594242;
+    background-color: #20201d;
+    border-radius: 15px;
+    height: 50px;
+    font-size:3vh;
+    color: #fefbec;
+    text-align:center;
+    transition: width 0.4s ease-in-out;
+}
+aside form input:focus
+{
+    width: 200%;
+}
+.delinp
+{
+    width: 75%;
+    margin-top: 20px;
+}
+.delinp:focus
+{
+    width: 75%;
+}
+aside form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside form button
+{
+    margin-top: 20px;
+    background-color: #594242;
+    border-radius: 10px;
+    color: #fefbec;
+    height: 3vh;
+    width: 75%;
+}
+aside form button:active
+{
+    border:3px solid #594242;
+    border-radius: 15px;
+    background-color: #20201d;
+}
+section ol
+{
+    margin-bottom: 10px;
+    font-size:3vh;
 }
 footer
 {
@@ -165,11 +205,9 @@ a#mail:visited
     {
         width: 50%;
     }
-    aside p
+    aside form input:focus
     {
-        width: 70%;
-        margin-top: 10%;
-        font-size: 2.5vw;
+        width: 130%;
     }
     /*media*/
 }
@@ -216,11 +254,9 @@ a#mail:visited
         width: 100%;
         align-items: center;
     }
-    aside p
+    aside form input:focus
     {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 3vw;
+        width: 130%;
     }
     footer
     {
